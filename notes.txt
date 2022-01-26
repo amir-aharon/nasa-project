@@ -1,0 +1,3 @@
+Loading Planets 1/26
+'readStreamFile' blocks code so I have to make a promise of it
+I export the function and create an async function on server.js
