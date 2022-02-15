@@ -1,12 +1,12 @@
 // Connecting to model
-const { planets } = require('../../models/planets.model')
+const { getAllPlanets } = require('../../models/planets.model')
 
 // Controllers
-function getAllPlanets(req, res) {
-  return res.status(200).json(planets);
+function httpGetAllPlanets(req, res) {
+  return res.status(200).json(getAllPlanets());
 }
 
 // Exporting to router
 module.exports = {
-  getAllPlanets,
+  httpGetAllPlanets,
 }
